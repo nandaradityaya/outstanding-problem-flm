@@ -3257,11 +3257,12 @@ input::placeholder {
 }
 
 .tablinks.selected {
-  background-color: #0095ff;
-  color: #ffffff;
+  background-color: #0095ff22;
+  color: #1d1d1d;
+  font-weight: 500;
 }
 
-.national-summary {
+.blast-config {
   /* transform: scaleY(0.2); */
   transition: all 0.2s ease;
 }

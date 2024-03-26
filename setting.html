@@ -392,6 +392,18 @@
 					</div>
 				</div>
 
+				<div class="alert border-0 border-start border-5 border-success alert-dismissible fade show py-2">
+					<div class="d-flex align-items-center">
+						<div class="font-35 text-success"><i class="bx bxs-check-circle"></i>
+						</div>
+						<div class="ms-3">
+							<h6 class="mb-0 text-success">Success!</h6>
+							<div>Congrats! You've successfully Resend Blast.</div>
+						</div>
+					</div>
+					<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+				</div>
+
 				<div class="card radius-10">
 					<div class="card-body">
 						<ul class="nav nav-tabs nav-primary" role="tablist">
@@ -432,6 +444,18 @@
 									<div class="ms-auto">
 										<button type="button" class="radius-8 btn btn-outline-primary d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#addNewBank"><i class="bx bx-plus"></i>Add New</button>
 									</div>
+								</div>
+
+								<div class="alert border-0 border-start border-5 border-success alert-dismissible fade show py-2">
+									<div class="d-flex align-items-center">
+										<div class="font-35 text-success"><i class="bx bxs-check-circle"></i>
+										</div>
+										<div class="ms-3">
+											<h6 class="mb-0 text-success">Success!</h6>
+											<div>Congrats! You've successfully added data.</div>
+										</div>
+									</div>
+									<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 								</div>
 
 								<div class="table-responsive">
@@ -483,6 +507,18 @@
 									</div>
 								</div>
 
+								<div class="alert border-0 border-start border-5 border-success alert-dismissible fade show py-2">
+									<div class="d-flex align-items-center">
+										<div class="font-35 text-success"><i class="bx bxs-check-circle"></i>
+										</div>
+										<div class="ms-3">
+											<h6 class="mb-0 text-success">Success!</h6>
+											<div>Congrats! You've successfully added data.</div>
+										</div>
+									</div>
+									<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+								</div>
+
 								<div class="table-responsive">
 									<table id="tableGroupingCategory" class="table mb-0 align-middle" style="width:100%">
 										<thead class="table-light">
@@ -528,137 +564,169 @@
 								</div>
 							</div>
 							<div class="tab-pane fade" id="blastConfig" role="tabpanel">
-								<div class="d-flex align-items-center mb-4">
-									<div>
-										<h5 class="font-weight-bold mb-2">Outstanding 1-3 Hours / Daily</h5>
-									</div>
-									<div class="ms-auto">
-										<button type="button" class="radius-8 btn btn-outline-primary d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#addNewOutstanding3Hours"><i class="bx bx-plus"></i>Add New</button>
+								<div class="btn-group-round text-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-white tablinks selected" onclick="toggleBtn(event, '3Hours')">Outstanding 1-3 Hours / Daily</button>
+										<button type="button" class="btn btn-white tablinks" onclick="toggleBtn(event, '6Hours')">Outstanding > 6 Hours</button>
 									</div>
 								</div>
-
-								<div class="table-responsive mb-5">
-									<table id="tableOutstanding3Hours" class="table mb-0 align-middle" style="width:100%">
-										<thead class="table-light">
-											<tr>
-												<th>Employee Code</th>
-												<th>Name</th>
-												<th>Phone Number</th>
-												<th>Branch</th>
-												<th>Status</th>
-												<th>Action</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>WSS-11231</td>
-												<td>John Walker</td>
-												<td>088079878692</td>
-												<td>CIDENG</td>
-												<td><div class="badge rounded-pill text-primary bg-light-primary p-2 text-uppercase px-3">
-													Active</div></td>
-												<td>
-													<div class="d-flex order-actions">
-														<a type="button" class="text-danger bg-light-danger border-0" data-bs-toggle="modal" data-bs-target="#modalDeleteBank"><i class="bx bxs-trash"></i></a>
-													</div>
-												</td>
-											</tr>
-											<tr>
-												<td>WSS-11231</td>
-												<td>Anisa</td>
-												<td>088079878692</td>
-												<td>CIDENG</td>
-												<td><div class="badge rounded-pill text-primary bg-light-primary p-2 text-uppercase px-3">
-													Active</div></td>
-												<td>
-													<div class="d-flex order-actions">
-														<a type="button" class="text-danger bg-light-danger border-0" data-bs-toggle="modal" data-bs-target="#modalDeleteBank"><i class="bx bxs-trash"></i></a>
-													</div>
-												</td>
-											</tr>
-											<tr>
-												<td>WSS-11231</td>
-												<td>Hary Maguire</td>
-												<td>088079878692</td>
-												<td>CIDENG</td>
-												<td><div class="badge rounded-pill text-primary bg-light-primary p-2 text-uppercase px-3">
-													Active</div></td>
-												<td>
-													<div class="d-flex order-actions">
-														<a type="button" class="text-danger bg-light-danger border-0" data-bs-toggle="modal" data-bs-target="#modalDeleteBank"><i class="bx bxs-trash"></i></a>
-													</div>
-												</td>
-											</tr>
-											<tr>
-												<td>WSS-11231</td>
-												<td>Paul</td>
-												<td>088079878692</td>
-												<td>CIDENG</td>
-												<td><div class="badge rounded-pill text-primary bg-light-primary p-2 text-uppercase px-3">
-													Active</div></td>
-												<td>
-													<div class="d-flex order-actions">
-														<a type="button" class="text-danger bg-light-danger border-0" data-bs-toggle="modal" data-bs-target="#modalDeleteBank"><i class="bx bxs-trash"></i></a>
-													</div>
-												</td>
-											</tr>
-											<tr>
-												<td>WSS-11231</td>
-												<td>Felix</td>
-												<td>088079878692</td>
-												<td>CIDENG</td>
-												<td><div class="badge rounded-pill text-primary bg-light-primary p-2 text-uppercase px-3">
-													Active</div></td>
-												<td>
-													<div class="d-flex order-actions">
-														<a type="button" class="text-danger bg-light-danger border-0" data-bs-toggle="modal" data-bs-target="#modalDeleteBank"><i class="bx bxs-trash"></i></a>
-													</div>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-
 								<hr/>
-
-
-								<div class="d-flex align-items-center mb-4">
-									<div>
-										<h5 class="font-weight-bold mb-2">Outstanding > 6 Hours</h5>
+								<div class="blast-config" id="3Hours">
+									<div class="d-flex align-items-center mb-4">
+										<div>
+											<h5 class="font-weight-bold mb-2">Outstanding 1-3 Hours / Daily</h5>
+										</div>
+										<div class="ms-auto">
+											<button type="button" class="radius-8 btn btn-outline-primary d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#addNewOutstanding3Hours"><i class="bx bx-plus"></i>Add New</button>
+										</div>
 									</div>
-									<div class="ms-auto">
-										<button type="button" class="radius-8 btn btn-outline-primary d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#addNewOutstanding6Hours"><i class="bx bx-plus"></i>Add New</button>
+	
+									<div class="alert border-0 border-start border-5 border-success alert-dismissible fade show py-2">
+										<div class="d-flex align-items-center">
+											<div class="font-35 text-success"><i class="bx bxs-check-circle"></i>
+											</div>
+											<div class="ms-3">
+												<h6 class="mb-0 text-success">Success!</h6>
+												<div>Congrats! You've successfully added data.</div>
+											</div>
+										</div>
+										<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+									</div>
+	
+									<div class="table-responsive mb-5">
+										<table id="tableOutstanding3Hours" class="table mb-0 align-middle" style="width:100%">
+											<thead class="table-light">
+												<tr>
+													<th>Employee Code</th>
+													<th>Name</th>
+													<th>Phone Number</th>
+													<th>Branch</th>
+													<th>Status</th>
+													<th>Action</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>WSS-11231</td>
+													<td>John Walker</td>
+													<td>088079878692</td>
+													<td>CIDENG</td>
+													<td><div class="badge rounded-pill text-primary bg-light-primary p-2 text-uppercase px-3">
+														Active</div></td>
+													<td>
+														<div class="d-flex order-actions">
+															<a type="button" class="text-danger bg-light-danger border-0" data-bs-toggle="modal" data-bs-target="#modalDeleteBank"><i class="bx bxs-trash"></i></a>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>WSS-11231</td>
+													<td>Anisa</td>
+													<td>088079878692</td>
+													<td>CIDENG</td>
+													<td><div class="badge rounded-pill text-primary bg-light-primary p-2 text-uppercase px-3">
+														Active</div></td>
+													<td>
+														<div class="d-flex order-actions">
+															<a type="button" class="text-danger bg-light-danger border-0" data-bs-toggle="modal" data-bs-target="#modalDeleteBank"><i class="bx bxs-trash"></i></a>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>WSS-11231</td>
+													<td>Hary Maguire</td>
+													<td>088079878692</td>
+													<td>CIDENG</td>
+													<td><div class="badge rounded-pill text-primary bg-light-primary p-2 text-uppercase px-3">
+														Active</div></td>
+													<td>
+														<div class="d-flex order-actions">
+															<a type="button" class="text-danger bg-light-danger border-0" data-bs-toggle="modal" data-bs-target="#modalDeleteBank"><i class="bx bxs-trash"></i></a>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>WSS-11231</td>
+													<td>Paul</td>
+													<td>088079878692</td>
+													<td>CIDENG</td>
+													<td><div class="badge rounded-pill text-primary bg-light-primary p-2 text-uppercase px-3">
+														Active</div></td>
+													<td>
+														<div class="d-flex order-actions">
+															<a type="button" class="text-danger bg-light-danger border-0" data-bs-toggle="modal" data-bs-target="#modalDeleteBank"><i class="bx bxs-trash"></i></a>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>WSS-11231</td>
+													<td>Felix</td>
+													<td>088079878692</td>
+													<td>CIDENG</td>
+													<td><div class="badge rounded-pill text-primary bg-light-primary p-2 text-uppercase px-3">
+														Active</div></td>
+													<td>
+														<div class="d-flex order-actions">
+															<a type="button" class="text-danger bg-light-danger border-0" data-bs-toggle="modal" data-bs-target="#modalDeleteBank"><i class="bx bxs-trash"></i></a>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
 									</div>
 								</div>
 
-								<div class="table-responsive">
-									<table id="tableOutstanding6Hours" class="table mb-0 align-middle" style="width:100%">
-										<thead class="table-light">
-											<tr>
-												<th>Employee Code</th>
-												<th>Name</th>
-												<th>Phone Number</th>
-												<th>Branch</th>
-												<th>Status</th>
-												<th>Action</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>WSS-11231</td>
-												<td>JOHN WALKER</td>
-												<td>088079878692</td>
-												<td>CIDENG</td>
-												<td><div class="badge rounded-pill text-primary bg-light-primary p-2 text-uppercase px-3">
-													Active</div></td>
-												<td>
-													<div class="d-flex order-actions">
-														<a type="button" class="text-danger bg-light-danger border-0" data-bs-toggle="modal" data-bs-target="#modalDeleteBank"><i class="bx bxs-trash"></i></a>
-													</div>
-												</td>
-											</tr>
-										</tbody>
-									</table>
+								<div class="blast-config" id="6Hours" style="display: none;">
+									<div class="d-flex align-items-center mb-4">
+										<div>
+											<h5 class="font-weight-bold mb-2">Outstanding > 6 Hours</h5>
+										</div>
+										<div class="ms-auto">
+											<button type="button" class="radius-8 btn btn-outline-primary d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#addNewOutstanding6Hours"><i class="bx bx-plus"></i>Add New</button>
+										</div>
+									</div>
+	
+									<div class="alert border-0 border-start border-5 border-success alert-dismissible fade show py-2">
+										<div class="d-flex align-items-center">
+											<div class="font-35 text-success"><i class="bx bxs-check-circle"></i>
+											</div>
+											<div class="ms-3">
+												<h6 class="mb-0 text-success">Success!</h6>
+												<div>Congrats! You've successfully added data.</div>
+											</div>
+										</div>
+										<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+									</div>
+	
+									<div class="table-responsive">
+										<table id="tableOutstanding6Hours" class="table mb-0 align-middle" style="width:100%">
+											<thead class="table-light">
+												<tr>
+													<th>Employee Code</th>
+													<th>Name</th>
+													<th>Phone Number</th>
+													<th>Branch</th>
+													<th>Status</th>
+													<th>Action</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>WSS-11231</td>
+													<td>JOHN WALKER</td>
+													<td>088079878692</td>
+													<td>CIDENG</td>
+													<td><div class="badge rounded-pill text-primary bg-light-primary p-2 text-uppercase px-3">
+														Active</div></td>
+													<td>
+														<div class="d-flex order-actions">
+															<a type="button" class="text-danger bg-light-danger border-0" data-bs-toggle="modal" data-bs-target="#modalDeleteBank"><i class="bx bxs-trash"></i></a>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -829,7 +897,7 @@
 				<div class="modal-dialog modal-lg modal-dialog-centered">
 					<div class="modal-content radius-10">
 						<div class="modal-header">
-							<h5 class="modal-title" id="modalEditGroupCategoryLabel">Edit Bank</h5>
+							<h5 class="modal-title" id="modalEditGroupCategoryLabel">Edit Group Category</h5>
 							<button type="button" class="btn-close" data-bs-dismiss="modal"
 								aria-label="Close"></button>
 						</div>
@@ -868,6 +936,17 @@
 								<div class="ms-auto">
 									<button id="toggleCategoryList" type="button" class="radius-8 btn btn-outline-primary d-flex align-items-center"><i class="bx bx-plus"></i>Add New</button>
 								</div>
+							</div>
+							<div class="alert border-0 border-start border-5 border-success alert-dismissible fade show py-2">
+								<div class="d-flex align-items-center">
+									<div class="font-35 text-success"><i class="bx bxs-check-circle"></i>
+									</div>
+									<div class="ms-3">
+										<h6 class="mb-0 text-success">Success!</h6>
+										<div>Congrats! You've successfully added data.</div>
+									</div>
+								</div>
+								<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 							</div>
 							<div class="mb-3" id="categoryList" style="display: none;">
 								<label class="form-label">Category List</label>
@@ -1178,6 +1257,32 @@
             categoryList.style.display = 'none';
         }
     });
+</script>
+<script>
+	function toggleBtn(evt, menuName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("blast-config");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.transform = "scaleY(0.2)";
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" selected", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.className += " selected";
+  setTimeout(() => {
+    document.getElementById(menuName).style.transform = "scaleY(1)";
+  }, 50);
+}
 </script>
 	<!--app JS-->
 	<script src="assets/js/app.js"></script>
