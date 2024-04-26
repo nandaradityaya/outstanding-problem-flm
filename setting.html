@@ -790,12 +790,12 @@
 						</div>
 						<div class="modal-body">
 							<div class="mb-3">
-								<label for="code" class="form-label">Code</label>
-								<input type="text" class="form-control" id="code" placeholder="Code...">
-							</div>
-							<div class="mb-3">
-								<label for="bankName" class="form-label">Bank Name</label>
-								<input type="text" class="form-control" id="bankName" placeholder="Bank Name...">
+								<label class="form-label">Select Bank</label>
+								<select class="form-select" id="selectBank">
+									<option value="" selected>Select Bank...</option>
+									<option value="admf">ADMF - PT ADIRA DINAMIKA MULTI FINANCE</option>
+									<option value="agr">AGR - BANK AGRIS</option>
+								</select>
 							</div>
 							<div class="mb-3">
 								<label for="" class="form-label">Status</label>
@@ -1239,6 +1239,14 @@
 
 		$('.multiple-select-3').select2({
 			dropdownParent: $('#addNewOutstanding3Hours'),
+			theme: 'bootstrap4',
+			width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+			placeholder: $(this).data('placeholder'),
+			allowClear: Boolean($(this).data('allow-clear')),
+		});
+
+		$('#selectBank').select2({
+			dropdownParent: $('#addNewBank'),
 			theme: 'bootstrap4',
 			width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
 			placeholder: $(this).data('placeholder'),
